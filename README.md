@@ -5,9 +5,13 @@ Python Version: 3.x
 Packages Required:
 
 numpy
+
 openCV
+
 mathplotlib
+
 os
+
 math
 
 To run the codes:
