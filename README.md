@@ -4,9 +4,11 @@ Python Version: 3.x
 
 Packages Required:
 
-NumPy
-
-OpenCV
+numpy
+openCV
+mathplotlib
+os
+math
 
 To run the codes:
 
