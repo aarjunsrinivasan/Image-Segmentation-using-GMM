@@ -1,5 +1,6 @@
 # ENPM-673-Project3
 
+Used GMM to segment different colored buoy 
 Python Version: 3.x
 
 Packages Required:
