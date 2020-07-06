@@ -5,8 +5,8 @@ color distributions of the buoys present in the video and use them for segmentat
 
 
 <p align="center">
-  <p align="center"><img src="/Data/Sample.png"></p>
-  <br><b>Figure 1 - Turtlebot-3 Burger moving in known world using velocities provided by A* planner</b><br>
+  <p align="center"><img src="/Data/Sample.PNG"></p>
+  <br><b>Figure 1 - Image segmentation of green buoy</b><br>
 </p>
 ## Pre-requisites
 
