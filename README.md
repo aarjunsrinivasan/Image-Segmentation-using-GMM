@@ -1,12 +1,7 @@
-# Image Segementation Using Gaussian Mixture Modelling (GMM)
+# Image Segementation Using Gaussian Mixture Modelling 
 
-This project focuses on color segmentation using concepts of Gaussian Mixture Modelling and Expectation
-Maximization (EM). We are provided with an underwater video sequence consisting of 3 buoys of dierent
-colors; yellow, orange, green. Since the buoys have been captured in an underwater scenario, change in
-lighting intensities and noise make it dicult to employ the use of conventional segmentation techniques
-involving color thresholding. Hence, we choose to develop a Gaussian Mixture Model that can learn the
-color distributions of the buoys present in the video and use them for segmentation. The remaining sections
-of the report discuss about the implementations of the above mentioned concepts.
+This project focuses on color segmentation using concepts of Gaussian Mixture Modelling and Expectation Maximization (EM). We are provided with an underwater video sequence consisting of 3 buoys of different colors; yellow, orange, green. Since the buoys have been captured in an underwater scenario, change in lighting intensities and noise make it difficult to employ the use of conventional segmentation techniques involving color thresholding. Hence, we choose to develop a Gaussian Mixture Model that can learn the
+color distributions of the buoys present in the video and use them for segmentation. The remaining sections of the report discuss about the implementations of the above mentioned concepts.
 
 ## Pre-requisites
 
