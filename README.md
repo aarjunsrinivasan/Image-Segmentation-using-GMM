@@ -6,7 +6,6 @@ color distributions of the buoys present in the video and use them for segmentat
 
 <p align="center">
   <p align="center"><img src="/Data/Sample.PNG"></p>
-  <br><b>Figure 1 - Image segmentation of green buoy</b><br>
 </p>
 
 
