@@ -1,23 +1,29 @@
-# ENPM-673-Project3
+# Image Segementation Using Gaussian Mixture Modelling (GMM)
 
-Used GMM to segment different colored buoy 
-Python Version: 3.x
+This project focuses on color segmentation using concepts of Gaussian Mixture Modelling and Expectation
+Maximization (EM). We are provided with an underwater video sequence consisting of 3 buoys of dierent
+colors; yellow, orange, green. Since the buoys have been captured in an underwater scenario, change in
+lighting intensities and noise make it dicult to employ the use of conventional segmentation techniques
+involving color thresholding. Hence, we choose to develop a Gaussian Mixture Model that can learn the
+color distributions of the buoys present in the video and use them for segmentation. The remaining sections
+of the report discuss about the implementations of the above mentioned concepts.
 
-Packages Required:
+## Pre-requisites
 
-numpy
+- Python Version: 3.x
 
-openCV
+## Packages Required:
 
-mathplotlib
+- Numpy
 
-os
+- OpenCV
 
-math
+- Matplotlib
 
-To run the codes:
+## How to run
 
-1.)Run the python files in the current directory which contains all the codes.
+- Run the python files in the current directory which contains all the codes.
+- To estimate the GMM's for individual colored buoys, run the jupyter notebooks greenGMM.ipynb, yellowGMM.ipynb, and orangeGMM.ipynb
+- To test the modelled GMM's, run the scripts greenvideo.py, yellowvideo.py, and orangevideo.py
 
 
-In order to get more information visit the below GitHub link: https://github.com/aarjunsrinivasan/ENPM-673-Project3.git

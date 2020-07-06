@@ -8,7 +8,7 @@ Created on Sun Apr  5 21:41:12 2020
 
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 import os
 import math
 
@@ -28,9 +28,12 @@ b3=gaussian(x, np.array([132.60]),np.array([16.84]) )
 
 path=os.getcwd()+"/"+"detectbuoy.avi"
 c=cv2.VideoCapture(path)
- 
+fourcc = cv2.VideoWriter_fourcc(*'MP4V')
+out = cv2.VideoWriter('greenDetection.mp4', fourcc, 15, (640, 480))
 while (True):
     ret,image=c.read()
+    if ret==False:
+        break
     b,g,r=cv2.split(image)
     if ret == True:
         img_out3=np.zeros(g.shape, dtype = np.uint8)      
@@ -52,17 +55,20 @@ while (True):
                 radius = int(radius)
                 print(radius)
                 if radius > 12 and radius < 17:
-                    cv2.circle(image,center,radius,(0,0,255),2)
+                    cv2.circle(image,center,radius,(0,255,0),2)
                     
         cv2.imshow("Threshold",dilation3)
         cv2.imshow('Green Ball Segmentation', image)
+        cv2.imwrite('green.jpg', image)
+        out.write(image)
         k = cv2.waitKey(1) & 0xff
         if k == 27:
             break      # wait for ESC key to exit
     else:
         break
         
-cv2.release()
+c.release()
+out.release()
 cv2.destroyAllWindows()   
 
 
